@@ -72,14 +72,13 @@
 </style>
 </head>
   <body>
-    <div class="be-wrapper be-fixed-sidebar">
+    <!-- <div class="be-wrapper be-fixed-sidebar"> -->
 
       <!-- Cabecalho -->
       @guest
-        <nav class="navbar navbar-expand fixed-top be-top-header">
+     <!--    <nav class="navbar navbar-expand fixed-top be-top-header">
         <div  class="container-fluid">
           <div style="background-color: rgb(255,255,255);" class="be-navbar-header">
-           <!--  <a  class="navbar-brand"> <img style="width: 150px; height: 50px" src="{{asset('/bleagle2/img/logo-samcol.jpg')}}"></a> -->
           </div>
           <div class="page-title"><span>Trabalho02</span></div>
           <div class="be-right-navbar">
@@ -91,7 +90,7 @@
           </div>
         </div>
       </nav>
-      
+       -->
 
      @else  <!--  Else do guest -->
       
@@ -134,7 +133,7 @@
       
 
 
-</div>
+<!-- </div> -->
 
 <!-- TABLE FILTER -->
   <!-- <script type="text/javascript" language="javascript" src="{{asset('tablefilter/src/tablefilter.js')}}"></script>   -->
