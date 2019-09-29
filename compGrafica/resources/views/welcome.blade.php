@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="trabalho 2">
+    <meta name="description" content="trabalho 23">
     <meta name="author" content="Valter Cinquenta">
     <link rel="shortcut icon" href="{{asset('bleagle2/img/book.png')}}">
-    <title>Trabalho 2</title>
+    <title>Trabalho 3</title>
 
 <!-- Boostrap -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
@@ -102,30 +102,118 @@
             <div class="col-12 col-lg-10 offset-lg-1">
             <div class="col-12 col-lg-12">
               <div class="card">
-                <div class="card-header">Default Tabs</div>
+                <div class="card-header">trab_prat_02</div>
                 <div class="tab-container">
                   <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item"><a class="nav-link active" href="#home" data-toggle="tab" role="tab">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#profile" data-toggle="tab" role="tab">Profile</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#messages" data-toggle="tab" role="tab">Messages</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#home" data-toggle="tab" role="tab">Translação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#profile" data-toggle="tab" role="tab">Rotação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#messages" data-toggle="tab" role="tab">Escala</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#messages1" data-toggle="tab" role="tab">clipping (Recortar)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#messages2" data-toggle="tab" role="tab">Diversos</a></li>
                   </ul>
                   <div class="tab-content">
                     <div class="tab-pane active" id="home" role="tabpanel">
-                      <h4>Top Tabs</h4>
-                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta lacus ipsum, tempus consequat turpis auctor sit amet. Pellentesque porta mollis nisi, pulvinar convallis tellus tristique nec.</p>
-                      <p> Nam aliquet consequat quam sit amet dignissim. Quisque vel massa est. Donec dictum nisl dolor, ac malesuada tellus efficitur non. Pellentesque pellentesque odio neque, eget imperdiet eros vehicula lacinia.</p>
+                      <h4>Translação</h4>
+                     
+
+
                     </div>
                     <div class="tab-pane" id="profile" role="tabpanel">
-                      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima praesentium laudantium ipsa, enim maxime placeat, dolores quos sequi nisi iste velit perspiciatis rerum eveniet voluptate laboriosam perferendis ipsum. Expedita, maiores.</p>
-                      <p> Consectetur adipisicing elit. Minima praesentium laudantium ipsa, enim maxime placeat, dolores quos sequi nisi iste velit perspiciatis rerum eveniet voluptate laboriosam perferendis ipsum. Expedita, maiores.</p>
+                      <h4>Rotação</h4>
+                        <div class="mt-4 mb-2">
+                            <div class="btn-toolbar">
+                              <div class="btn-group btn-group-justified mb-2" role="group">
+                                <a id="rodar_esquerda" class="btn btn-secondary" >Tela cinza</a>
+                                <a id="rodar_direita" class="btn btn-secondary" >Preto e branco</a>
+                                <button id="rodar_esquerda">Esquerda</button>
+                                <button id="rodar_direita">Direita</button>
+                                <!-- <a class="btn btn-secondary" onclick="thresholding()">Limiar</a>
+                                <a class="btn btn-secondary" onclick="sepia()">Sépia</a>
+                                <a class="btn btn-secondary" onclick="emboss()">Gravar</a>
+                                <a class="btn btn-secondary" onclick="halftone()">Meio-tom</a> -->
+                              </div>
+                            </div>
+                        </div>
+                      
+
+
                     </div>
                     <div class="tab-pane" id="messages" role="tabpanel">
-                      <p>Consectetur adipisicing elit. Ipsam ut praesentium, voluptate quidem necessitatibus quam nam officia soluta aperiam, recusandae.</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos facilis laboriosam, vitae ipsum tenetur atque vel repellendus culpa reiciendis velit quas, unde soluta quidem voluptas ipsam, rerum fuga placeat rem error voluptate eligendi modi. Delectus, iure sit impedit? Facere provident expedita itaque, magni, quas assumenda numquam eum! Sequi deserunt, rerum.</p><a href="#">Read more  </a>
+                      <h4>Escala</h4>
+                       <div class="form-group row">
+                      <label class="col-12 col-sm-3 col-form-label text-sm-right">Input Text</label>
+                      <div class="col-12 col-sm-8 col-lg-6">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend"><span class="input-group-text">$</span></div>
+                          <input class="form-control" type="text">
+                          <div class="input-group-append"><span class="input-group-text">.00</span></div>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="btn btn-secondary" onclick="scale()">Escala (Redimensionar)</button>
+                      </div>
                     </div>
+                      
+
+
+                    </div>
+                     <div class="tab-pane" id="messages1" role="tabpanel">
+                       <h4>clipping</h4>
+                           <div class="mt-4 mb-2">
+                            <div class="btn-toolbar">
+                              <div class="btn-group btn-group-justified mb-2" role="group">
+                                <div class="input-group mb-3">
+                                  <div class="input-group-prepend"><span class="input-group-text">$</span></div>
+                                  <input class="form-control" type="text">
+                                  <div class="input-group-append"><span class="input-group-text">.00</span></div>
+                                </div>
+                                <a class="btn btn-secondary" onclick="edgeDetection1()">Detecção de borda 1</a>
+                                <a class="btn btn-secondary" onclick="edgeDetection1()">Detecção de borda 1</a>
+                                <a class="btn btn-secondary" onclick="edgeDetection2()">Detecção de borda 2</a>
+                                <a class="btn btn-secondary" onclick="crop()">Recortar</a>
+                                <a class="btn btn-secondary" onclick="reset()">Repor</a>
+                              </div>
+                            </div>
+                        </div>
+                     
+
+                    </div>
+                     <div class="tab-pane" id="messages2" role="tabpanel">
+                      <h4>Diversos</h4>
+                      <div>
+                        <div class="mt-4 mb-2">
+                            <div class="btn-toolbar">
+                              <div class="btn-group btn-group-justified mb-2" role="group">
+                                <a class="btn btn-secondary" onclick="grayScale()">Tela cinza</a>
+                                <a class="btn btn-secondary" onclick="blackAndWhite()">Preto e branco</a>
+                                <a class="btn btn-secondary" onclick="thresholding()">Limiar</a>
+                                <a class="btn btn-secondary" onclick="sepia()">Sépia</a>
+                                <a class="btn btn-secondary" onclick="emboss()">Gravar</a>
+                                <a class="btn btn-secondary" onclick="halftone()">Meio-tom</a>
+                              </div>
+                               <div class="btn-group btn-group-justified mb-2" role="group">
+                                <a class="btn btn-secondary" onclick="invert()">Inverter</a>
+                                <a class="btn btn-secondary" onclick="edgeDetection1()">Detecção de borda 1</a>
+                                <a class="btn btn-secondary" onclick="edgeDetection2()">Detecção de borda 2</a>
+                                <a class="btn btn-secondary" onclick="crop()">Recortar</a>
+                                <a class="btn btn-secondary" onclick="scale()">Escala (Redimensionar)</a>
+                                <a class="btn btn-secondary" onclick="reset()">Repor</a>
+                              </div>
+                            </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-10 offset-lg-1 ">
+                        <canvas id="canvas" width="796" height="500"></canvas><br/>
+                    </div>
+                     <button id="rodar_esquerda">Esquerda</button>
+                     <button id="rodar_direita">Direita</button>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -358,58 +446,121 @@
     </script>
 
 
-<!-- PESQUISA AVANCADA -->
-    <script>
-      function pesquisar(idTabela, idTxt) {
-          var input, filter, table, tr, td, i;
-          input = document.getElementById(idTxt);
-          filter = input.value.toUpperCase();
-          table = document.getElementById(idTabela);
-          tr = table.getElementsByTagName("tr");
-          for (i = 1; i < tr.length; i++) {
-            // Hide the row initially.
-            tr[i].style.display = "none";
+    <script src="https://www.marvinj.org/releases/marvinj-0.9.js"></script>
+    <script src="{{asset('bleagle2/marvinj-1.0.min.js')}}" type="text/javascript"></script>
 
-            td = tr[i].getElementsByTagName("td");
-            for (var j = 0; j < td.length; j++) {
-              cell = tr[i].getElementsByTagName("td")[j];
-              if (cell) {
-                if (cell.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                  tr[i].style.display = "";
-                  break;
-                } 
-              }
-            }
+    <script type="text/javascript">
+      
+      var canvas = document.getElementById("canvas");
+        var original = new MarvinImage();
+        var image;
+
+        original.load("https://i.imgur.com/lgO7TRl.png", function(){
+           // Draw the original image 
+           original.draw(canvas);
+        });
+
+        function grayScale(){
+          image = original.clone();
+          Marvin.grayScale(original, image);
+          image.draw(canvas);
         }
-      }
+
+        function blackAndWhite(){
+          image = original.clone();
+          Marvin.blackAndWhite(original, image, 20);
+          image.draw(canvas);
+        }
+
+        function thresholding(){
+          image = original.clone();
+          Marvin.thresholding(original, image, 160);
+          image.draw(canvas);
+        }
+
+        function sepia(){
+          image = original.clone();
+          Marvin.sepia(original, image, 30);
+          image.draw(canvas);
+        }
+
+        function emboss(){
+          image = original.clone();
+          Marvin.emboss(original, image, 30);
+          image.draw(canvas);
+        }
+
+        function halftone(){
+          image = original.clone();
+          Marvin.halftoneErrorDiffusion(original, image);
+          image.draw(canvas);
+        }
+
+        function invert(){
+          image = original.clone();
+          Marvin.invertColors(original, image);
+          image.draw(canvas);
+        }
+
+        function edgeDetection1(){
+          image = original.clone();
+          image.clear(0xFF000000);
+          Marvin.prewitt(original, image);
+          image.draw(canvas);
+        }
+
+        function edgeDetection2(){
+          image = original.clone();
+          image.clear(0xFF000000);
+          Marvin.prewitt(original, image);
+          Marvin.invertColors(image, image);
+          Marvin.thresholding(image, image, 200);
+          image.draw(canvas);
+        }
+
+        function crop(){
+          image = original.clone();
+          Marvin.crop(original, image, 140, 165, 125, 50);
+          canvas.getContext("2d").clearRect(0,0,canvas.width, canvas.height);
+          image.draw(canvas);
+        }
+
+        function scale(){
+          image = original.clone();
+          Marvin.scale(original, image, 200);
+          canvas.getContext("2d").clearRect(0,0,canvas.width, canvas.height);
+          image.draw(canvas);
+        }
+
+        function reset(){
+          original.draw(canvas);
+        }
 
 
-      function pesquisar2(classeTabela, idTxt) {
-          var input, filter, table, tr, td, i;
-          input = document.getElementById(idTxt);
-          filter = input.value.toUpperCase();
-          table = document.getElementById(classeTabela);
-          tr = table.getElementsByTagName("tr");
-          
-              for (i = 1; i < tr.length; i++) {
-                // Hide the row initially.
-                tr[i].style.display = "none";
 
-                td = tr[i].getElementsByTagName("td");
-                for (var j = 0; j < td.length; j++) {
-                  cell = tr[i].getElementsByTagName("td")[j];
-                  if (cell) {
-                    if (cell.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                      tr[i].style.display = "";
-                      break;
-                    } 
-                  }
-                }
-            }
-      }
+        //site: http://jsfiddle.net/m1erickson/6ZsCz/
+
+        $("#rodar_esquerda").click(function(){ 
+            angleInDegrees+=90;
+            drawRotated(angleInDegrees);
+        });
+
+        $("#rodar_direita").click(function(){ 
+            angleInDegrees-=90;
+            drawRotated(angleInDegrees);
+        });
+
+        function drawRotated(degrees){
+            original.clearRect(0,0,canvas.width,canvas.height);
+            original.save();
+            original.translate(canvas.width/2,canvas.height/2);
+            original.rotate(degrees*Math.PI/180);
+            original.drawImage(image,-image.width/2,-image.width/2);
+            original.restore();
+        }
+
+
     </script>
-
-    
   
 
   </body>
